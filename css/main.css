@@ -1,0 +1,106 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	font-size: 100%;
+}
+@font-face{
+	font-family: "Poiret One";
+	src: url(../fonts/PoiretOne-Regular.ttf);
+}
+@font-face{
+	font-family: "NerisLight";
+	src: url(../fonts/Neris-Light.otf);
+}
+.wrapper{
+	width: 100%;
+}
+#login_title{
+	margin: auto;
+	padding-left: 32px;
+	color: #08405d;
+	width: 100%;
+	max-width: 1000px;
+}
+#login_title h2{
+	margin-top: 0px;
+    margin-bottom: 15px;
+	font-family: Poiret One, cursive;
+	font-size: 40px;
+	font-weight: 400;
+}
+#login_title a{
+	display: block;
+	color: #0000ee;
+	text-decoration: underline;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+#login_title input{
+    box-sizing: border-box;
+}
+#login_title input:focus{
+	border-color: rgba(22, 174, 229, 0.5);
+    box-shadow: inset rgba(22, 174, 229, 0.5) 0px 1px 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+.login_parag_left{
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 30px;
+    max-width: 235px;
+    width: 100%;
+    position: relative;
+    font-family: NerisLight, sans-serif;
+}
+.login_parag_left_float{
+	cursor: pointer;
+	width: 100%;
+	float: left;
+}
+.login_input input{
+	height: 32px;
+	width: 285px;
+	padding: 5px;
+    border: 1px solid #d7d7d7;
+    font-family: cursive;
+}
+#capture_text{
+	clear: both;
+	margin-top: 30px;
+	margin-bottom: 20px;
+    line-height: 17px;
+    font-size: 18px;
+}
+#capture_img{
+	cursor: pointer;
+	float: left;
+}
+#capture_input input{
+	width: 125px;
+	height: 42px;
+	padding: 5px;
+    border: 1px solid #d7d7d7;
+    margin-left: 40px;
+    font-size: 20px;
+}
+#login_title button{
+	cursor: pointer;
+	clear: both;
+	display: block;
+	color: white;
+	background: url("../gray_btn_r.svg") no-repeat 100% 0px;;
+	border:none;
+	position: relative;
+    width: 156px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    padding: 0;
+    margin-top: 70px;
+    outline: none;
+    margin-bottom: 40px;
+}
