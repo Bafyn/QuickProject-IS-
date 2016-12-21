@@ -289,9 +289,9 @@
                   <input tabindex="17" id="Qterms" type="checkbox" class="hidden_input" name="Qtermsofagreement" value="1">
                   <span class="check_text">Я принимаю условия </span>
                 </label>
-                <a href="http://www.moemnenie.ru/ru/user_agreement" class="gl_link color_blue_light" target="_blank">Пользовательского соглашения</a>&nbsp;и 
-                <a href="http://www.moemnenie.ru/ru/policy" class="gl_link color_blue_light" target="_blank">Политики конфиденциальности</a>&nbsp;и даю 
-                <a href="http://www.moemnenie.ru/ru/personal_data" class="gl_link color_blue_light" target="_blank">согласие на обработку моих персональных данных.</a>
+                <a href="" class="gl_link" target="_blank">Пользовательского соглашения</a>&nbsp;и 
+                <a href="" class="gl_link" target="_blank">Политики конфиденциальности</a>&nbsp;и даю 
+                <a href="" class="gl_link" target="_blank">согласие на обработку моих персональных данных.</a>
               </div>
               <div class="capcha_div">
 		      			<p class="field_headline" style="width: 100%; margin-bottom: 0px;">Пожалуйста, введите число, которое Вы видите на картинке</p>
