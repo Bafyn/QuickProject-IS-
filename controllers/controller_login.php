@@ -11,11 +11,11 @@ class Controller_Login extends Controller
         $data = $this->model->get_data();
         if(!$data['status_log'])
         {
-            $this->view->generate('login_view.php', '', $data);
+            $this->view->generate('login_view.php', $data);
         }
         else
         {
-            echo 'Мы вошли';
+            Route::headerLocation("/cabinet");
         }
     }
 }

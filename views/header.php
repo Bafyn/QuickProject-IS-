@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Header</title>
 	<link href="../template/css/main.css" rel="stylesheet" type="text/css">
 	<script src="mainjs.js"></script>
 </head>
@@ -36,16 +35,31 @@
 						<span class="main_menu_item_text">Помощь</span>
 					</a>
 				</li>
+                <?php
+                if(isset($_COOKIE['id'])&&isset($_COOKIE['Hash'])){
+                                ?>
+                <li class="main_menu_item">
+                    <a href="cabinet" class="main_menu_item_link">
+                        <span class="main_menu_item_text">Личный кабинет</span>
+                    </a>
+                </li>
+                    <li class="main_menu_item">
+                        <a href="logout" class="main_menu_item_link">
+                            <span class="main_menu_item_text">Выход</span>
+                        </a>
+                    </li>
+                 <?php } else{ ?> 
 				<li class="main_menu_item">
-					<a href="" class="main_menu_item_link">
+					<a href="signup" class="main_menu_item_link">
 						<span class="main_menu_item_text">Регистрация</span>
 					</a>
 				</li>
 				<li class="main_menu_item">
-					<a href="" class="main_menu_item_link">
+					<a href="login" class="main_menu_item_link">
 						<span class="main_menu_item_text">Вход</span>
 					</a>
 				</li>
+                                <?php } ?>
 			</ul>
 		</nav>
 	</header>
@@ -62,7 +76,7 @@
         <div class="slider_wrapper">
             <div class="slide">
                 <div>
-                	<span class="site_info_header">Какой-то крутой сайт</span>
+                	<span class="site_info_header">Название сайта</span>
                 </div>
                 <img src="../template/img/main_header.jpg" class="slide_img max_w_mod mob_only">
             </div>

@@ -1,6 +1,8 @@
 <?php
     if(!defined("AIF"))
+    {
         header('Location:/login');
+    }
 ?>
 <!DOCTYPE html>
 <html>

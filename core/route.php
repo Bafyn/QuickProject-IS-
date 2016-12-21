@@ -18,6 +18,9 @@ class Route
                 $action_name = 'index';
 
                 $routes = explode('/', $_SERVER['REQUEST_URI']);
+                //parse_str(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY));
+                //var_dump(parse_url($_SERVER['REQUEST_URI']));
+                //echo $reg;
 
             // получаем имя контроллера
             if ( !empty($routes[1]) )

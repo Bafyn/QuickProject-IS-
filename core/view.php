@@ -26,6 +26,8 @@ class View
 		внутри которого будет встраиваться вид
 		для отображения контента конкретной страницы.
 		*/
+               require_once 'views/header.php';
                require_once 'views/'.$content_view;
+               require_once 'views/footer.php';
 	}
 }

@@ -21,6 +21,8 @@ class Model_Login extends Model
                 if(password_verify($pass, $user['Password']))
                 {
                     $data['status_log'] = TRUE;
+                    SetCookie("id", $user['Id'], time()+3600*24);
+                    SetCookie("Hash", $user['Password'], time()+3600*24);
                 }
                 else
                 {

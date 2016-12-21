@@ -1,6 +1,8 @@
 <?php
-    if(!defined("AIF"))
+if(!defined("AIF"))
+    {
         header('Location:/login');
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,9 +33,6 @@
         {
         ?>
         <div class="reg_to_log_true">Вы успешно зарегистрированы</div>
-        <script type="text/javascript">
-       	location.href = "/login";
-        </script>
         <?php } ?>
         <?php
         	if(isset($data['error_log']))
