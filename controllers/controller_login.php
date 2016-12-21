@@ -11,5 +11,4 @@ class Controller_Login extends Controller
         $data = $this->model->get_data();
         $this->view->generate('login_view.php', '', $data);
     }
-	
 }
