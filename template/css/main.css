@@ -474,3 +474,20 @@ body, html{
     height: 50px;
     background: url(../img/arrow_bg_r.png) no-repeat 0px 0px;
 }
+.signup_fail{
+	color: red;
+	clear:both;
+	float: left;
+	font-size: 19px;
+	margin-bottom: 10px;
+}
+.reg_to_log_true{
+	color: green;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.login_error{
+	color: red;
+	font-size: 20px;
+	margin-top: 30px;
+}

@@ -7,6 +7,10 @@
 */
 class Route
 {
+    public static function headerLocation($location = '/')
+    {
+        header("Location: $location");
+    }
     static function start()
 	{
             // контроллер и действие по умолчанию
@@ -65,11 +69,9 @@ class Route
                 return true;
             }
         }
-
 	function ErrorPage404()
 	{
             echo "404";
             return true;
         }
-    
 }

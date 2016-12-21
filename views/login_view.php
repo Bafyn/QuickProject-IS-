@@ -26,6 +26,21 @@
 		<div class="login_input">
 			<input type="password" name="pwd" tabindex="2" id="input_2" required="required">
 		</div>
+        <?php 
+            if($data['status_reg'])
+        {
+        ?>
+        <div class="reg_to_log_true">Вы успешно зарегистрированы</div>
+        <script type="text/javascript">
+       	location.href = "/login";
+        </script>
+        <?php } ?>
+        <?php
+        	if(isset($data['error_log']))
+        	{
+        ?>
+        <div class="login_error"><?php echo $data['error_log'] ?></div>
+        <?php } ?>
 		<div id="capture_text">Пожалуйста, введите число, которое Вы видите на картинке</div>
                 <div id="capture_img"><img src="template/img/capture.jpg"></div>
 		<div id="capture_input"><input type="text" name="capture" tabindex="3"></div>
@@ -34,7 +49,5 @@
 		<a href="#">Не пришло сообщение со ссылкой для активации аккаунта</a>
 	</form>
 </div>
-<?php extract($data); ?>
-<p style="color:green"> <?php echo $pwd ?> </p>
 </body>
 </html>

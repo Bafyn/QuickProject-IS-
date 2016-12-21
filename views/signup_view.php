@@ -4,13 +4,11 @@
 ?>
 <!DOCTYPE html>
 <html>
-
     <head>
 	    <title>Регистрация</title>
 	    <link href="../template/css/main.css" rel="stylesheet" type="text/css">
 	    <script src="mainjs.js"></script>
     </head>
-
     <body>
       <div class="wrapper">
         <div class="section">
@@ -20,7 +18,7 @@
               Пожалуйста, заполните информацию о себе
             </p>
             
-            <form name="join" id="join" method="POST">
+            <form id="join" method="POST" action="">
               <div class="">
                 <div class="field_headline">
                   <label for="lastname" class="">Фамилия</label>
@@ -276,7 +274,14 @@
                   <input tabindex="16" required="required" placeholder="********" class="input_data_field f_input_v2" name="verify_password" id="verify_password" type="password">
                 </div>
               </div>
-
+                <?php
+                    if(isset($data['error']))
+                    {
+                        foreach ($data['error'] as $key) {
+                          echo '<div class="signup_fail">'.$key.'</div>';     
+                      }
+                    }
+                ?> 
               <div class="license_agreement">
                 <label class="radio_emul check_emul_v1" id="termsb">
                   <input tabindex="17" id="Qterms" type="checkbox" class="hidden_input" name="Qtermsofagreement" value="1">
@@ -286,7 +291,6 @@
                 <a href="http://www.moemnenie.ru/ru/policy" class="gl_link color_blue_light" target="_blank">Политики конфиденциальности</a>&nbsp;и даю 
                 <a href="http://www.moemnenie.ru/ru/personal_data" class="gl_link color_blue_light" target="_blank">согласие на обработку моих персональных данных.</a>
               </div>
-                   
               <div class="capcha_div">
 		      			<p class="field_headline" style="width: 100%; margin-bottom: 0px;">Пожалуйста, введите число, которое Вы видите на картинке</p>
                 <div class="capcha_img">
@@ -296,12 +300,12 @@
                   <input tabindex="18" id="input_2" placeholder="" class="input_capcha" name="code_txt" type="tel">
                 </div>
 					    </div>
-
               <div class="redeem_controls">
-                <button tabindex="19" class="btn_go_forward mod_80" type="button">Зарегистрироваться</button>
+                <button tabindex="19" class="btn_go_forward mod_80" type="submit" ">Зарегистрироваться</button>
           		</div>
+              
           	</form>
-          </div>
+          </div>         
       	</div>
       </div>
     </body>
