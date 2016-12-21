@@ -358,7 +358,7 @@ input, select {
 @font-face {
 	font-family: "Neris";
 	src: url(../fonts/NerisLight.ttf);
-=======
+}
 body, html{
 	margin: 0;
 	padding: 0;
@@ -473,5 +473,4 @@ body, html{
     width: 43px;
     height: 50px;
     background: url(../img/arrow_bg_r.png) no-repeat 0px 0px;
->>>>>>> origin/master
 }

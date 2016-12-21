@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class Controller_Login extends Controller
+class Controller_Signup extends Controller
 {
     function __construct() {
         $this->model = new Model_Sigup();
