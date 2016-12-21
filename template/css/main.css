@@ -66,7 +66,7 @@ input, select {
 }
 
 .field_input, .field_input_select {
-	margin-left: 20px;
+	margin-left: 15px;
 	position: relative;
 	font: 1.6rem/1 "NerisLight", sans-serif;
 	color: #444444;
@@ -79,7 +79,7 @@ input, select {
 .field_input_select {
 	/*padding: 10px 22px 10px 5px;*/
     border: 1px solid #d7d7d7;
-    width: 337px;
+    width: 325px;
     cursor: pointer;
     margin-top: -10px;
     height: 42px;
@@ -137,7 +137,7 @@ input, select {
 	padding: 5px;
 	width: 100%;
 	display: block;
-	height: 30px;
+	height: 42px;
 	vertical-align: middle;
 	margin-top: -10px;
 }
@@ -853,7 +853,7 @@ body, html{
 }
 
 #cabinet_third span b {
-    font-weight: color: #FFFFFF;
+    color: #FFFFFF;
     margin: 0px 0px 0px 2px;
     padding: 0px 0px 0px 2px;
     height: 32px;
@@ -986,11 +986,10 @@ body, html{
 }
 
 div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, input, label, textarea, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin: 0; */
+    margin: 0; 
     padding: 0;
     border: 0;
     outline: 0; 
-    font-size: 100%; 
     vertical-align: baseline; 
     background: transparent; 
     -webkit-box-sizing: border-box; 

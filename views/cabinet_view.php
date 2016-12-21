@@ -5,8 +5,8 @@
     <link rel="stylesheet" type="text/css" href="../template/css/main.css">
 </head>
 <body>
-<div class="wrapper">
-	<div id="cabinet">
+    <div class="wrapper" >
+        <div id="cabinet">
 	<div class="section_inner clearfix">
 		<div id="cabinet_first">
 			<h2>Личный кабинет</h2>
@@ -24,7 +24,7 @@
 				<div id="way" style="align-self:flex-start;margin-left:15px;">
 				
 				<span>
-				    <b style="width:0%">0&nbsp;/&nbsp;50</b>
+				    <b style="width:0%;position: relative;bottom: 5px;" >0&nbsp;/&nbsp;50</b>
 					<i>Студент</i>
 			  </span>
 			</div>
@@ -214,9 +214,9 @@
         </div>
 
 
-        <div class="bx-wrapper" style="max-width: 990px;position: absolute;left:5px;">
+        <div class="bx-wrapper" style="max-width: 990px;left:5px;">
             <div class="bx-viewport" style="width: 100%;position: relative; height: 285px;">
-                <ul data-slide-width="210" data-slide-min="1" data-slide-auto="false" data-slide-pause="3000" data-slide-max="4" data-slide-margin="31" class="slider" style="position: relative;">
+                <ul data-slide-width="210" data-slide-min="1" data-slide-auto="false" data-slide-pause="3000" data-slide-max="4" data-slide-margin="31" class="slider" style="position: relative;display: flex;">
                     <li class="slide offer_item spendProdPopupBtn bx-clone" product-id="1138" filter-type="cat-21 cat-24" data-productname="Портмоне Dr. Koffer" style="float: left; list-style: none; position: relative; margin-right: 25px; width: 210px;">
                       	<a href="http://www.moemnenie.ru/ru/myaccount#" class="withdraw_img">
                         	<img class="top-img" src="../template/img/product.jpg">
@@ -293,7 +293,6 @@
             </div>
 		<a href="" class="btn_go_forward offer_mod">Посмотреть все</a>
         </div>
-		<br style="clear:both"><br/>
 
 	</div>
 	</div>
