@@ -18,7 +18,7 @@ class Controller_Signup extends Controller
         if(!$data['status_reg'])
             $this->view->generate('signup_view.php', '', $data);
         else{
-            Route::headerLocation("/login?reg=true");         
+            Route::headerLocation("/login");         
         }
     }
 }
